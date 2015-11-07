@@ -8,12 +8,18 @@
 
     <meta http-equiv="Cache-control" content="public">
 
+    <!-- keeping Open Sans -->
+    <script async src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script async>
+      WebFont.load({
+        google: {
+          families: ['Open Sans']
+        }
+      });
+    </script>
+
     <title>Performance Portfolio</title>
 
-    <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-    <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
-
-    <!-- <link href="css/style.css" rel="stylesheet"> -->
     <link href="css/print.css" rel="stylesheet" media="print">
     <style>
       html {
@@ -67,6 +73,7 @@
       }
     </style>
 
+    <!-- question: doesn't this inline script rely on the analytics script running first? should it be delayed until onload? -->
     <script>
       (function(w,g){w['GoogleAnalyticsObject']=g;
       w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
