@@ -20,8 +20,8 @@ gulp.task('scripts', function(){
 // minifies css files and outputs them to build/css/*.css
 gulp.task('styles', function(){
     return gulp.src('src/css/*.css')
-                .pipe(minifyCSS())
-                .pipe(gulp.dest('./build/css'));
+        .pipe(minifyCSS())
+        .pipe(gulp.dest('./build/css'));
 });
 
 // minifies HTML files and outputs them to *.html
