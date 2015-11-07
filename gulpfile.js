@@ -5,9 +5,8 @@ var gulp = require('gulp'),
     minifyCSS = require('gulp-minify-css'),
     minifyhtml = require('gulp-minify-html'),
     // htmlreplace = require('gulp-html-replace'),
-    // inline = require('gulp-inline-source'),
+    inline = require('gulp-inline-source'),
     rename = require('gulp-rename');
-
 
 // minifies & concatenates js and outputs it to build/js/app.min.js
 gulp.task('scripts', function(){
@@ -31,6 +30,7 @@ gulp.task('html', function() {
             empty: true,
             quotes: true
         }))
+        .pipe(inline())
         .pipe(gulp.dest('./'));
 });
 
