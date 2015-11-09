@@ -9,6 +9,7 @@ Project 4 for front-end web developer nanodegree.
 Primarily because I didn't want to inline CSS in my actual source files, this project is a bit split between "production" and "development". 
 
 To replicate the process:
+
 - install [node.js](https://nodejs.org/en/)
 - navigate to the main directory of the project
 - run: ```npm install --save-dev gulp-uglify gulp-rename gulp-minify-css gulp-minify-html gulp-inline-source```
@@ -16,29 +17,74 @@ To replicate the process:
 
 ### Files
 
+- **README.md**: this one!
+- **build** contains only gulp-generated build-only files (but not all of them, sorry!)
+   - css
+   - js
+- **gulpfile.js** build process
+- **img** contains all of the images, build and non-build
+- **node_modules** contains all the node modules for gulp
+- **.html** build HTML files; development code has been moved to /src
+- **src** contains source code that gulp uses
+- **views** contains build/production code for the pizza page
 
+output of tree:
 
-
-### OLD NOTES
-
-
-
-####Part 2: Optimize Frames per Second in pizza.html
-
-To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
-
-You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
-
-### Optimization Tips and Tricks
-* [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/ "web performance")
-* [Analyzing the Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/analyzing-crp.html "analyzing crp")
-* [Optimizing the Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/optimizing-critical-rendering-path.html "optimize the crp!")
-* [Avoiding Rendering Blocking CSS](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css.html "render blocking css")
-* [Optimizing JavaScript](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/adding-interactivity-with-javascript.html "javascript")
-* [Measuring with Navigation Timing](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/measure-crp.html "nav timing api"). We didn't cover the Navigation Timing API in the first two lessons but it's an incredibly useful tool for automated page profiling. I highly recommend reading.
-* <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/eliminate-downloads.html">The fewer the downloads, the better</a>
-* <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer.html">Reduce the size of text</a>
-* <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization.html">Optimize images</a>
-* <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching.html">HTTP caching</a>
-
-
+```
+├── README.md
+├── build
+│   ├── css
+│   │   ├── print.css
+│   │   └── style.css
+│   └── js
+│       └── app.min.js
+├── gulpfile.js
+├── image_compress.py
+├── img
+│   ├── 2048.png
+│   ├── 2048_small.jpg
+│   ├── cam_be_like.jpg
+│   ├── cam_be_like_small.jpg
+│   ├── mobilewebdev.jpg
+│   ├── mobilewebdev_small.jpg
+│   ├── profilepic.jpg
+│   └── profilepic_small.jpg
+├── index.html
+├── node_modules
+.... snip
+├── project-2048.html
+├── project-mobile.html
+├── project-webperf.html
+├── src
+│   ├── css
+│   │   ├── print.css
+│   │   └── style.css
+│   ├── index.html
+│   ├── js
+│   │   └── perfmatters.js
+│   ├── project-2048.html
+│   ├── project-mobile.html
+│   ├── project-webperf.html
+│   └── views
+│       ├── css
+│       │   └── style.css
+│       ├── js
+│       │   └── main.js
+│       └── pizza.html
+└── views
+    ├── build
+    │   ├── css
+    │   └── js
+    ├── css
+    │   ├── bootstrap-grid.css
+    │   └── style.css
+    ├── images
+    │   ├── pizza.png
+    │   ├── pizzeria.jpg
+    │   ├── pizzeria_icon.jpg
+    │   └── pizzeria_small.jpg
+    ├── js
+    │   ├── app.min.js
+    │   └── main.js
+    └── pizza.html
+```
