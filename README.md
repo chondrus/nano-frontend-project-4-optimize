@@ -39,7 +39,6 @@ output of tree:
 │   └── js
 │       └── app.min.js
 ├── gulpfile.js
-├── image_compress.py
 ├── img
 │   ├── 2048.png
 │   ├── 2048_small.jpg
@@ -72,9 +71,6 @@ output of tree:
 │       │   └── main.js
 │       └── pizza.html
 └── views
-    ├── build
-    │   ├── css
-    │   └── js
     ├── css
     │   ├── bootstrap-grid.css
     │   └── style.css
@@ -84,7 +80,6 @@ output of tree:
     │   ├── pizzeria_icon.jpg
     │   └── pizzeria_small.jpg
     ├── js
-    │   ├── app.min.js
-    │   └── main.js
+    │   └── app.min.js
     └── pizza.html
 ```
