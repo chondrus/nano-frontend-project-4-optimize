@@ -1,10 +1,12 @@
-// gulp from https://discussions.udacity.com/t/gulp-and-setting-up-a-gulp-workflow-intermediate/24359/3
+// gulp started
+//  from https://discussions.udacity.com/t/gulp-and-setting-up-a-gulp-workflow-intermediate/24359/3
+// continued from google
 
 var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     minifyCSS = require('gulp-minify-css'),
     minifyhtml = require('gulp-minify-html'),
-    // htmlreplace = require('gulp-html-replace'),
+    // htmlreplace = require('gulp-html-replace'), // seems pretty neat, but haven't figured it out fully
     inline = require('gulp-inline-source'),
     rename = require('gulp-rename');
 
